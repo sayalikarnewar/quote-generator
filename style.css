@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 html{
     box-sizing: border-box;
 }
@@ -5,4 +7,68 @@ html{
 body{
     margin: 0;
     min-height: 100vh;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ff9fa5' fill-opacity='0.28' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    font-family: 'Caveat', cursive;
+    font-size: 700;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.quote-container {
+    width: auto;
+    max-width: 900px;
+    padding : 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 100);
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    
+}
+
+.quote-text {
+    font-size : 30px;
+}
+
+.long-quote {
+    font-size: 20px;
+}
+
+.fa-quote-left {
+    font-size: 36px;
+}
+
+.author {
+    font-size: 20px ;
+    margin-top: 10px;
+    color: sienna;
+    font-weight: 400;
+
+}
+
+.button-container {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.share-button {
+    
+}
+
+
+@media screen and (max-width : 1000px) {
+    .quote-container {
+        margin: auto 30px;
+    }
+    .quote-text {
+        font-size: 20px;
+    }
+    .fa-quote-left {
+        font-size: 26px;
+    }
 }
