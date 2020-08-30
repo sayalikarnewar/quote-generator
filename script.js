@@ -1,5 +1,5 @@
 console.log("testing");
-console.log(1);
+
 
 let name = "Sayalikarnewar";
 console.log(name[6]);
