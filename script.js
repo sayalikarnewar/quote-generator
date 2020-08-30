@@ -1,5 +1,3 @@
-console.log("testing");
-
 
 let name = "Sayalikarnewar";
 console.log(name[6]);
