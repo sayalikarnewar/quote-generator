@@ -31,6 +31,7 @@ body{
 
 .quote-text {
     font-size : 30px;
+
 }
 
 .long-quote {
@@ -39,6 +40,8 @@ body{
 
 .fa-quote-left {
     font-size: 36px;
+    text-shadow: 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+
 }
 
 .author {
@@ -46,6 +49,8 @@ body{
     margin-top: 10px;
     color: sienna;
     font-weight: 400;
+    text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+
 
 }
 
@@ -53,11 +58,35 @@ body{
     display: flex;
     margin-top: 10px;
     justify-content: space-between;
-    cursor: pointer;
 }
 
+button {
+    cursor: pointer;
+    font-size: 1rem;
+    height: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: #fff;
+    background-color: #333;
+    box-shadow: 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+    outline: none;
+    padding: 0.5rem 1.8rem;
 
+}
 
+button:hover {
+    filter: brightness(120%);
+}
+
+button:active{
+    transform: translate(0, 0.1rem);
+    box-shadow: 0 0.1rem rgba(0, 0, 0, 0.2);
+
+}
+
+.share-button:hover{
+color: red;
+}
 @media screen and (max-width : 1000px) {
     .quote-container {
         margin: auto 30px;
