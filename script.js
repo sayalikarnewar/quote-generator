@@ -53,8 +53,6 @@ async function getQuote(){
         getQuote();
     }
 };
-
-
 //tweet quote
 
 function share(){
@@ -64,10 +62,8 @@ function share(){
     window.open(url, '_blank');
 }
 
-
 //event listener
 next.addEventListener('click', getQuote);
 twitter.addEventListener('click', share);
-
 
 getQuote();
