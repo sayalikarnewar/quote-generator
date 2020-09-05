@@ -9,7 +9,7 @@ body{
     min-height: 100vh;
     background-color: #ffffff;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ff9fa5' fill-opacity='0.28' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-    font-family: 'Caveat', cursive;
+    font-family: 'Times New Roman';
     font-size: 700;
     text-align: center;
     display: flex;
@@ -30,26 +30,27 @@ body{
 }
 
 .quote-text {
-    font-size : 36px;
+    font-size : 35px;
 
 }
 
 .long-quote {
-    font-size: 20px;
+    font-size: 28px;
 }
 
 .fa-quote-left {
-    font-size: 36px;
+    font-size: 39px;
     text-shadow: 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
 
 }
 
 .author {
-    font-size: 20px ;
+    font-size: 27px ;
     margin-top: 10px;
-    color: sienna;
+    color: rgb(83, 33, 10);
     font-weight: 400;
     text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+    font-family: 'Caveat';
 
 
 }
@@ -85,16 +86,42 @@ button:active{
 }
 
 .share-button:hover{
-color: red;
+color: orange;
 }
 @media screen and (max-width : 1000px) {
     .quote-container {
         margin: auto 30px;
     }
     .quote-text {
+        font-size: 25px;
+    }
+    .author{
         font-size: 20px;
     }
     .fa-quote-left {
         font-size: 26px;
     }
 }
+
+
+/* loader */
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

@@ -3,10 +3,27 @@ const quotetext = document.getElementById('quote');
 const author = document.getElementById('author');
 const twitter = document.getElementById('share-button');
 const next = document.getElementById('new-quote');
+const loader = document.getElementById('loader');
+
+//show loading
+function loading(){
+    loader.hidden = false;
+    quoteContainer.hidden = true;
+}
+
+//hide loading
+function complete(){
+    if (!loader.hidden){
+        quoteContainer.hidden = false;
+        loader.hidden = true;
+    }
+}
 
 //get quote from API
 
 async function getQuote(){
+
+    loading();
     const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
     const apiUrl = 'http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
     
@@ -21,7 +38,7 @@ async function getQuote(){
             author.innerText = data.quoteAuthor;
         }   
 
-        if (data.quoteText.length > 50){
+        if (data.quoteText.length > 40){
             quotetext.classList.add('long-quote');
         }
         else{
@@ -29,7 +46,8 @@ async function getQuote(){
         }
 
         quotetext.innerText = data.quoteText;
-        
+        //stop loader and show the quote
+        complete();
     }catch(error){
 
         getQuote();
