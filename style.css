@@ -44,6 +44,11 @@ body{
 
 }
 
+.fa-quote-right {
+    font-size: 39px;
+    text-shadow: 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+
+}
 .author {
     font-size: 27px ;
     margin-top: 10px;
@@ -101,6 +106,10 @@ color: orange;
     .fa-quote-left {
         font-size: 26px;
     }
+    .fa-quote-right {
+        font-size: 26px;
+    }
+
 }
 
 
